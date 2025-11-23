@@ -5,7 +5,7 @@ import FeatureSection from "../components/EmergingAndRisingLeader/FeatureSection
 import Feature from "../components/EmergingAndRisingLeader/Feature";
 import QuoteSection from "../components/EmergingAndRisingLeader/QuoteSection";
 import HowItWorks from "../components/EmergingAndRisingLeader/HowItWorks";
-import EndHero from "../components/EmergingAndRisingLeader/EndHero";
+import EndHero from "../components/EmergingAndRisingLeader/EndHero.jsx";
 
 
 export const EmergingAndRisingLeader = () => {
