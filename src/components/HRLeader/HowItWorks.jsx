@@ -3,9 +3,9 @@ import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 
 const steps = [
-  { number: "1", title: "Launch in Days" },
-  { number: "2", title: "Employees Prctice Anytime",},
-  { number: "3", title: "Measured and Scale", },
+  { number: "1", title: "Launch in Days", description: "Connect with SSO or your LMS—no heavy IT lift." },
+  { number: "2", title: "Employees Prctice Anytime", description: "Realistic voice-driven scenarios that adapt to their choices." },
+  { number: "3", title: "Measured and Scale", description: "L&D dashboard shows adoption, progress, and ROI across teams." },
 ];
 
 const HowItWorks = () => (
@@ -22,13 +22,13 @@ const HowItWorks = () => (
                 {s.number}
               </div>
               <h3 className="font-bold text-2xl text-gray-900">{s.title}</h3>
-           
+              <p className="text-gray-500 text-lg">{s.description}</p>
             </CardContent>
           </Card>
         ))}
       </div>
-      <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg">
-        See the HR Dashboard
+      <Button className="bg-yellow-300 hover:bg-gray-800 text-black px-8 py-4 rounded-lg">
+        Start Free Trail
       </Button>
     </div>
   </section>

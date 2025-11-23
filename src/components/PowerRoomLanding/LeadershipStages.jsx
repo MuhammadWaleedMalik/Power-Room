@@ -1,27 +1,32 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
+import { Link } from "react-router-dom";
 
 const leadershipStages = [
   {
     title: "Individual Contributors",
     description: "Get heard in the room, not just on email.",
     bgImage: "/frame-2121458275-5.png",
+    link: "/emergingandrisingleader",
   },
   {
     title: "Emerging Leaders",
     description: "Win trust when you're new at the table.",
     bgImage: "/frame-2121458275-6.png",
+    link: "/emergingandrisingleader",
   },
   {
     title: "Established Leaders",
     description: "Sharpen influence to drive org-wide strategy.",
     bgImage: "/frame-2121458275-7.png",
+    link: "/establishedleader",
   },
   {
     title: "HR & L&D Teams",
     description: "Scalable leadership development with real behavioral impact.",
     bgImage: "/frame-2121458275-8.png",
+    link: "/hrleader",
   },
 ];
 
@@ -55,13 +60,20 @@ export const LeadershipStages = () => {
                         {stage.description}
                       </p>
                     </div>
+                    <Link to={stage.link}>
+                      <Button
+                        variant="link"
+                        className="p-0 h-auto text-black font-medium hover:no-underline"
+                      >
+                        Learn More -&gt;
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
-        
       </div>
     </section>
   );

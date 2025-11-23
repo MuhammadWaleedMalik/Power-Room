@@ -27,8 +27,8 @@ const HowItWorks = () => (
           </Card>
         ))}
       </div>
-      <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg">
-        See the L&D Leader Dashboard
+      <Button className="bg-yellow-300 hover:bg-gray-800 text-black px-8 py-4 rounded-lg">
+        Start Free Trail
       </Button>
     </div>
   </section>

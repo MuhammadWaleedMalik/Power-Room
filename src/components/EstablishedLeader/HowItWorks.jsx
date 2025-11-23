@@ -27,7 +27,7 @@ const HowItWorks = () => (
           </Card>
         ))}
       </div>
-      <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg">
+      <Button className="bg-yellow-400 hover:bg-gray-800 text-black px-8 py-4 rounded-lg">
         Start Free Trail  
       </Button>
     </div>

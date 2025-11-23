@@ -1,36 +1,43 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const footerSections = [
   {
     title: "Company",
-    links: ["About", "Pricing", "Contact Us"],
+    links: [
+      { name: "Pricing", path: "/pricing" },
+      { name: "Contact Us", path: "/contact" },
+    ],
   },
   {
     title: "Solutions",
     links: [
-      
-      "Rising Leaders",
-      "Established Leaders",
-      "HR Teams",
-      "L&D Teams",
-      
+      { name: "Rising Leaders", path: "/emergingandrisingleader" },
+      { name: "HR Teams", path: "/hrleader" },
+      { name: "L&D Teams", path: "/landleader" },
     ],
   },
   {
     title: "Insights",
-    links: ["Case Studies", "Established Leaders"],
+    links: [{ name: "Case Studies", path: "/use-case" }],
   },
   {
     title: "Legal",
-    links: ["Terms", "Privacy Policy", "Cookie Settings", "Legal Notice"],
+    links: [
+      { name: "Terms", path: "/terms" },
+      { name: "Privacy Policy", path: "/privacy" },
+      { name: "Cookie Settings", path: "/cookies" },
+    ],
   },
   {
     title: "Connect",
-    links: ["LinkedIn"],
-  },
-  {
-    title: "Contact Sales",
-    links: ["+8801234567899", "Locations", "Contact Form"],
+    links: [
+      {
+        name: "LinkedIn",
+        path: "https://www.linkedin.com/company/powerroom",
+        external: true,
+      },
+    ],
   },
 ];
 
@@ -44,7 +51,6 @@ export const Footer = () => {
       }}
     >
       <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-14 md:py-20 flex flex-col gap-12">
-        {/* Footer Links */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-10">
           {footerSections.map((section, index) => (
             <div key={index}>
@@ -54,12 +60,23 @@ export const Footer = () => {
               <ul className="space-y-2">
                 {section.links.map((link, i) => (
                   <li key={i}>
-                    <a
-                      href="#"
-                      className="text-sm text-gray-200 hover:text-white hover:underline transition"
-                    >
-                      {link}
-                    </a>
+                    {link.external ? (
+                      <a
+                        href={link.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-gray-200 hover:text-white hover:underline transition"
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.path}
+                        className="text-sm text-gray-200 hover:text-white hover:underline transition"
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -67,7 +84,6 @@ export const Footer = () => {
           ))}
         </div>
 
-        {/* Footer Tagline */}
         <div className="text-center font-serif text-2xl sm:text-3xl md:text-4xl leading-snug max-w-4xl mx-auto">
           PowerRoom exists to strengthen conversation and leadership skills
           across individuals, teams, companies, and societies.

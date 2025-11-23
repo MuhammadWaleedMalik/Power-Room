@@ -9,28 +9,25 @@ export const SocialProof = () => {
             Social Proof
           </h2>
           <p className="[font-family:'Inter',Helvetica] font-normal text-[#000000cc] text-base sm:text-lg md:text-2xl tracking-tight leading-tight sm:leading-snug">
-            As seen in USA Wire Winner of
-            the Stellar Business Award 2025
+            As seen in <strong>USA Wire</strong> and winner of the{" "}
+            <strong>Stellar Business Award 2025</strong>.
           </p>
         </div>
-        <div className="relative flex-shrink-0 w-full md:w-auto">
+
+        {/* Logo Section */}
+        <div className="flex items-center justify-center gap-6 sm:gap-10 md:gap-14 mt-6 md:mt-0">
           <img
-            className="w-full max-w-[300px] sm:max-w-[360px] md:w-96 h-auto rounded-xl object-cover mx-auto md:mx-0"
-            alt="Eu me lembro quando"
-            src="/eu-me-lembro-quando-eu-achava-que-tinha-que-seguir--1.png"
+            src="/usa.png"
+            alt="USA Wire Logo"
+            className="w-28 sm:w-36 md:w-44 h-auto object-contain"
           />
           <img
-            className="absolute top-16 sm:top-24 md:top-[100px] -left-20 sm:-left-40 md:-left-[260px] w-[200px] sm:w-[280px] md:w-[342px] h-auto rounded-xl object-cover hidden md:block"
-            alt="Voices of influence"
-            src="/voices-of-influence--an-eloquent-speaker-s-journey-1.png"
+            src="/cwa.jpg"
+            alt="Stellar Business Award Logo"
+            className="w-28 sm:w-36 md:w-44 h-auto object-contain rounded-lg"
           />
         </div>
       </div>
-      <img
-        className="absolute w-4 sm:w-6 h-auto"
-        alt="Vector"
-        src="/vector.svg"
-      />
     </section>
   );
 };

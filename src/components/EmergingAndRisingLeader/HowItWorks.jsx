@@ -27,20 +27,13 @@ const HowItWorks = () => (
           </Card>
         ))}
       </div>
-      <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg">
+      <Button className="bg-yellow hover:bg-gray-800 text-white px-8 py-4 rounded-lg">
         Start Free Trail  
       </Button>
     </div>
 
- <div className="bg-gray-900 text-white py-8 px-6 md:px-20 mt-8 rounded-2xl flex flex-col items-center justify-center gap-6 text-center">
-  <h2 className="text-2xl md:text-3xl font-bold">
-    Practice Your High-Stake Conversation Today
-  </h2>
+ 
 
-  <Button className="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-300 transition-all duration-300">
-    Start Free Trial
-  </Button>
-</div>
 
 
   </section>
