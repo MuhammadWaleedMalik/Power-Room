@@ -4,7 +4,7 @@ import ProblemSection from "../components/EstablishedLeader/Problem";
 import FeatureSection from "../components/EstablishedLeader/FeatureSection";
 import QuoteSection from "../components/EstablishedLeader/QuoteSection";
 import HowItWorks from "../components/EstablishedLeader/HowItWorks";
-import EndHero from "../components/EstablishedLeader/EndHero";
+import EndHero from "../components/EstablishedLeader/EndHero.jsx";
 
 
 export const EstablishedLeader = () => {

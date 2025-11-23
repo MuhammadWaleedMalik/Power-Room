@@ -4,7 +4,7 @@ import ProblemSection from "../components/HRLeader/Problem";
 import FeatureSection from "../components/HRLeader/FeatureSection";
 import QuoteSection from "../components/HRLeader/QuoteSection";
 import HowItWorks from "../components/HRLeader/HowItWorks";
-import EndHero from "../components/HRLeader/EndHero";
+import EndHero from "../components/HRLeader/EndHero.jsx";
 
 
 export const HRLeader = () => {
