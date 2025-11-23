@@ -19,6 +19,7 @@ return (
                 </button>
             </div>
             
+            
             {/* Subtitle */}
             <p className="text-xl sm:text-2xl text-gray-300 font-medium">
                 Practice today. Lead with confidence tomorrow.

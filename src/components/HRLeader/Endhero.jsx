@@ -13,6 +13,7 @@ return (
                <div className='text-white mb-3'>
                 From first-time managers to senior executives, give everyone the tools to speak with clarity and lead with confidence.
                </div>
+               
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                 <button className="w-full sm:w-auto bg-yellow-400 text-[#000000] font-semibold py-3 px-8 rounded-lg border  border-[#000000]   hover:bg-[#fef9eb]/90 transition duration-200 transform hover:scale-105">
                     Book a Demo
